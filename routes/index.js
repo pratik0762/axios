@@ -10,6 +10,7 @@ router.post('/api/user/login', usercontroller.loginpage);
 
 // contact card
 
+router.post('/api/contect/create', usercontroller.contactcreate);
  
 
 module.exports = router;
