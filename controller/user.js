@@ -74,7 +74,7 @@ exports.signuppage = async function(req, res, next) {
     try {
       const usertoken = req.hearders.usertoken
       const checktoken = await jwt.verify(usertoken , "SURAT")
-      userid = checktoken.id
+      req.body.userid = checktoken.id
       const data = await DATA.create(req.body)
   
       res.status(201).json({
