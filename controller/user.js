@@ -35,7 +35,8 @@ exports.signuppage = async function(req, res, next) {
   
       res.status(200).json({
         status : "success",
-        message : "login successfully"
+        message : "login successfully",
+        data : checkdata
       })
     } catch (error) {
       res.status(404).json({
