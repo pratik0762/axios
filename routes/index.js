@@ -8,6 +8,8 @@ const usercontroller = require("../controller/user")
 
 // user
 
+// hiii
+
 router.post('/api/user/signup', usercontroller.usersignuppage);
 router.post('/api/user/login', usercontroller.userloginpage);
 router.patch('/api/user/patch', usercontroller.userauth , usercontroller.userupdate);
